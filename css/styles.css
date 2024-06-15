@@ -523,13 +523,10 @@ body {
     }
 
     .site-main {
-        position: relative;
-        flex: 1;
     }
 
     .sum-section, .stat-section, .bio-section, .cred-section {
-        height: 100vh;
-        position: relative;
+        
     }
 
     .site-footer {
@@ -575,11 +572,23 @@ body {
         aspect-ratio: 1;
         
     }
+
+    .sum-text {
+        justify-content: flex-start;
+    }
+
+    .sum-text p {
+        margin: 5%;
+    }
 }
 
 @media screen and (max-width: 375px) {
     .sum-section, .stat-section, .bio-section, .cred-section {
-        overflow: auto;
+
+    }
+
+    .site-main {
+        overflow: hidden;
     }
 
     .stat-container h3 {
@@ -626,6 +635,20 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+    }
+
+    .some-div {
+        margin: 2%;
+    }
+
+    .sum-section h2 {
+        margin: 0;
+    }
+
+    .sum-text p {
+        margin: 3%;
+        font-size: 0.8rem;
+        
     }
 
     .sum-text p span {
