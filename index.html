@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>P's Website</title>
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+        <header class="site-header">
+            <button class="header-element header-btn header-menu" id="link-btn">
+                <span class="default-link">Menu</span>
+                <span class="bp-link">M</span>
+            </button>
+            <p class="header-element header-clock">
+                <span id="header-date">Wed, May 05 2024, </span>
+                <span id="header-time">11:20 PM, MEZ</span>
+            </p>
+            <button class="header-element header-btn" id="lang-btn">
+                <span class="default-language">Language</span>
+                <span class="bp-language">L</span>
+            </button>
+        </header>
+        <main class="site-main">
+            <p class="bg-text" id="bg-text">This is some placeholder text</p>
+            <section class="main-section section-left link-section hidden" id="link-section">
+                <a target="_blank" class="link-element" href="https://github.com/Phob3tor">GitHub</a>
+                <a target="_blank" class="link-element" href="https://tryhackme.com/p/Phob3tor">TryHackMe</a>
+                <a target="_blank" class="link-element" href="https://www.coursera.org/user/98b200aae1fb04f7cb0193cb7a154220">Coursera</a>
+                <a target="_blank" class="link-element" href="./pages/courses.html">Certificates</a>
+            </section>
+            <section class="main-section section-right lang-section hidden" id="lang-section">
+                <div class="lang-element" id="lang-eng">
+                    <p>🇺🇸 English</p>
+                </div>
+                <div class="lang-element" id="lang-ger">
+                    <p>🇩🇪 German</p>
+                </div>
+            </section>
+            <section class="main-section section-center sum-section hidden" id="sum-section">
+                <h2>Summary</h2>
+                <div class="sum-text">
+                    <p>
+                        Hi there.<br>
+                        During the year 2020 I was bored and bought a course in Web-Development out of curiosity.
+                        I never finished that course, but from this moment on I was very hyped and wanted to know more about different topics of IT.
+                        I did a lot of online courses since that time and even if my motivation drops at some point, it gets back sooner or later.
+                        There are lots of different programming languages, OS's and fields I stumbled upon during the last couple of years.
+                        My favorite coding languages are JavaScript and Python, Linux Mint is my most beloved OS at this time and I try to grow
+                        every day. At some point I want to become a penetration tester, but it's a long and difficult path.
+                        <br>
+                        The areas I'm interested in the most are web development, cybersecurity and artificial intelligence. 
+                        <br>
+                        One downside is, it is very difficult to get recognized without any certificates and/or degrees.
+                        Even entry level jobs seem to be unreachable.
+                        <br>
+                        Nevertheless I'll keep pushing. It's a couple of years now, but my journey has just begun.
+                    </p>
+                    <p>
+                        Best wishes and have a nice day<br>
+                        <span>Patrick</span>
+                    </p>    
+                </div>
+           
+            </section>
+            <section class="main-section section-center bio-section hidden" id="bio-section">
+                <h2>Bio</h2>
+                <img src="./img/profile.png" alt="image of me" class="bio-img">
+                <div class="bio-row name-row">
+                    <p>Name:</p><p>Patrick Schlej</p>
+                </div>
+                <div class="bio-row birth-row">
+                    <p>Birth:</p><p>October, 1991</p>
+                </div>
+                <div class="bio-row res-row">
+                    <p>Place of Residence:</p><p>Bavaria, Germany</p>
+                </div>
+                <div class="bio-row con-row"><p>Contact:</p><p style="user-select: text;">19p91s@gmail.com</p></div>
+            </section>
+            <section class="main-section section-center stat-section hidden" id="stat-section">
+                <h2>Skills</h2>
+                <div class="stat-wrapper">
+                    <div class="stat-column">
+                        <div class="stat-container">
+                            <h3>Languages:</h3>
+                            <div class="stat-row">
+                                <p>German</p>
+                                <div class="stat-bar">
+                                    <div class="bar-inner" id="german-bar"></div>
+                                </div>
+                            </div>
+                            <div class="stat-row">
+                                <p>English</p>
+                                <div class="stat-bar">
+                                    <div class="bar-inner" id="english-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stat-container">
+                            <h3>General IT:</h3>
+                            <div class="stat-row">
+                                <p>Hardware</p>
+                                <div class="stat-bar">
+                                    <div class="bar-inner" id="hardware-bar"></div>
+                                </div>
+                            </div>
+                            <div class="stat-row">
+                                <p>Networks</p>
+                                <div class="stat-bar">
+                                    <div class="bar-inner" id="networks-bar"></div>
+                                </div>
+                            </div>
+                            <div class="stat-row">
+                                <p>IT-Administration</p>
+                                <div class="stat-bar">
+                                    <div class="bar-inner" id="admin-bar"></div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="stat-container">
+                            <h3>Operating Systems:</h3>
+                            <div class="stat-row">
+                                <p>Microsoft Windows</p>
+                                <div class="stat-bar">
+                                    <div class="bar-inner" id="windows-bar"></div>
+                                </div>
+                            </div>
+                            <div class="stat-row">
+                                <p>Linux Ubuntu</p>
+                                <div class="stat-bar">
+                                    <div class="bar-inner" id="ubuntu-bar"></div>
+                                </div>
+                            </div>
+                            <div class="stat-row">
+                                <p>Kali Linux</p>
+                                <div class="stat-bar">
+                                    <div class="bar-inner" id="kali-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stat-container">
+                            <h3>Programming Languages:</h3>
+                            <div class="stat-row">
+                                <p>Python</p>
+                                <div class="stat-bar">
+                                    <div class="bar-inner" id="python-bar"></div>
+                                </div>
+                            </div>
+                            <div class="stat-row">
+                                <p>JavaScript</p>
+                                <div class="stat-bar">
+                                    <div class="bar-inner" id="javascript-bar"></div>
+                                </div>
+                            </div>
+                            <div class="stat-row">
+                                <p>C#</p>
+                                <div class="stat-bar">
+                                    <div class="bar-inner" id="csharp-bar"></div>
+                                </div>
+                            </div>
+                            <div class="stat-row">
+                                <p>PHP</p>
+                                <div class="stat-bar">
+                                    <div class="bar-inner" id="php-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stat-container">
+                            <h3>Frontend Develpment:</h3>
+                            <div class="stat-row">
+                                <p>HTML & CSS</p>
+                                <div class="stat-bar">
+                                    <div class="bar-inner" id="htmlcss-bar"></div>
+                                </div>
+                            </div>
+                            <div class="stat-row">
+                                <p>SCSS</p>
+                                <div class="stat-bar">
+                                    <div class="bar-inner" id="scss-bar"></div>
+                                </div>
+                            </div>
+                            <div class="stat-row">
+                                <p>Vue</p>
+                                <div class="stat-bar">
+                                    <div class="bar-inner" id="vue-bar"></div>
+                                </div>
+                            </div>
+                            <div class="stat-row">
+                                <p>React</p>
+                                <div class="stat-bar">
+                                    <div class="bar-inner" id="react-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat-column">
+                        <div class="stat-container">
+                            <h3>Backend Development:</h3>
+                            <div class="stat-row">
+                                <p>Python/Django</p>
+                                <div class="stat-bar">
+                                    <div class="bar-inner" id="django-bar"></div>
+                                </div>
+                            </div>
+                            <div class="stat-row">
+                                <p>JavaScript/NodeJS</p>
+                                <div class="stat-bar">
+                                    <div class="bar-inner" id="node-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stat-container">
+                            <h3>Software Development:</h3>
+                            <div class="stat-row">
+                                <p>ElectronJS</p>
+                                <div class="stat-bar">
+                                    <div class="bar-inner" id="electron-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stat-container">
+                            <h3>Databases:</h3>
+                            <div class="stat-row">
+                                <p>MySQL</p>
+                                <div class="stat-bar">
+                                    <div class="bar-inner" id="mysql-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stat-container">
+                            <h3>Cybersecurity:</h3>
+                            <div class="stat-row">
+                                <p>Threat Landscape</p>
+                                <div class="stat-bar">
+                                    <div class="bar-inner" id="threats-bar"></div>
+                                </div>
+                            </div>
+                            <div class="stat-row">
+                                <p>Firewalls</p>
+                                <div class="stat-bar">
+                                    <div class="bar-inner" id="firewalls-bar"></div>
+                                </div>
+                            </div>
+                            <div class="stat-row">
+                                <p>Penetration Testing</p>
+                                <div class="stat-bar">
+                                    <div class="bar-inner" id="pentesting-bar"></div>
+                                </div>
+                            </div>
+                            <div class="stat-row">
+                                <p>Cryptography</p>
+                                <div class="stat-bar">
+                                    <div class="bar-inner" id="crypto-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stat-container">
+                            <h3>IT (Misc.):</h3>
+                            <div class="stat-row">
+                                <p>Git & Github</p>
+                                <div class="stat-bar">
+                                    <div class="bar-inner" id="git-bar"></div>
+                                </div>
+                            </div>
+                            <div class="stat-row">
+                                <p>Libre Office / MS Office</p>
+                                <div class="stat-bar">
+                                    <div class="bar-inner" id="office-bar"></div>
+                                </div>
+                            </div>
+                            <div class="stat-row">
+                                <p>Bash</p>
+                                <div class="stat-bar">
+                                    <div class="bar-inner" id="bash-bar"></div>
+                                </div>
+                            </div>
+                            <div class="stat-row">
+                                <p>Powershell</p>
+                                <div class="stat-bar">
+                                    <div class="bar-inner" id="powershell-bar"></div>
+                                </div>
+                            </div>
+                            <div class="stat-row">
+                                <p>AI & Data Science (Python)</p>
+                                <div class="stat-bar">
+                                    <div class="bar-inner" id="datascience-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main-section section-center cred-section hidden" id="cred-section">
+                <h2>Experience</h2>
+                <p>Nothing to see here, yet...<br>Here, have a dog picture:</p>
+                <img src="" alt="" id="cred-pic">
+            </section>
+        </main>
+        <footer class="site-footer">
+            <section class="footer-bar">
+                <button class="footer-element" id="sum-btn">
+                    Sum
+                </button>
+                <button class="footer-element" id="bio-btn">
+                    Bio
+                </button>
+                <button class="footer-element" id="stat-btn">
+                    Skills
+                </button>
+                <button class="footer-element" id="cred-btn">
+                    Exp
+                </button>
+            </section>
+        </footer>
+        <script defer src="./js/skills.js"></script>
+        <script defer src="./js/clock.js"></script>
+        <script defer src="./js/window.js"></script>
+        <script defer src="./js/text.js"></script>
+    </body>
+</html>
