@@ -55,6 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         statObject[topic][1].classList.remove("hide-cont")
+        fillBars();
     }
 
 
