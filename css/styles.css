@@ -580,6 +580,11 @@ body {
 
     .sum-text p {
         margin: 5%;
+        font-site: 0.9rem;
+    }
+
+    .site-main {
+        overflow: hidden;
     }
 }
 
@@ -594,9 +599,7 @@ body {
 
     }
 
-    .site-main {
-        overflow: hidden;
-    }
+
 
     .stat-container h3 {
         font-size: 1rem;
