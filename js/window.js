@@ -17,7 +17,50 @@ document.addEventListener("DOMContentLoaded", () => {
     const statSec = document.getElementById("stat-section");
     const credSec = document.getElementById("cred-section");
 
+    // stat button/container consts
+    const statObject = {
+        "lan": [],
+        "gen": [],
+        "os": [],
+        "pro": [],
+        "fro": [],
+        "ba": [],
+        "soft": [],
+        "data": [],
+        "cyb": [],
+        "misc": []
+    }
 
+    for (let [key, value] of Object.entries(statObject)) {
+        let btnElement = document.getElementById(`${key}-btn`);
+        let containerElement = document.getElementById(`${key}-container`);
+
+        
+
+        if (btnElement) {
+            statObject[key].push(btnElement);
+        }
+
+        if (containerElement) {
+            statObject[key].push(containerElement);
+        }
+    }
+
+    
+    function showSkill() {
+        let topic = this.id.split("-")[0];
+
+        for (let[key, value] of Object.entries(statObject)) {
+            value[1].classList.add("hide-cont");
+        }
+
+        statObject[topic][1].classList.remove("hide-cont")
+    }
+
+
+    for (let[key, value] of Object.entries(statObject)) {
+        value[0].addEventListener("click", showSkill)
+    }
 
     const credPic = document.getElementById("cred-pic");
 
