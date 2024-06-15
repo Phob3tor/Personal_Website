@@ -523,6 +523,7 @@ body {
     }
 
     .site-main {
+        height: fit-content;
     }
 
     .sum-section, .stat-section, .bio-section, .cred-section {
@@ -579,6 +580,12 @@ body {
 
     .sum-text p {
         margin: 5%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .sum-text p {
+        font-size: 0.85rem;
     }
 }
 
