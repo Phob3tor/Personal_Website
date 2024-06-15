@@ -524,7 +524,7 @@ body {
 
     .site-main {
         height: fit-content;
-        min-height: 75vh;
+        min-height: 50vh;
     }
 
     .sum-section, .stat-section, .bio-section, .cred-section {
