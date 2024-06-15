@@ -64,7 +64,7 @@ body {
     height: 87.5%;
     width: 100%;
     background-color: transparent;
-    min-height: 12rem;
+
 
 }
 
@@ -524,6 +524,7 @@ body {
 
     .site-main {
         height: fit-content;
+        min-height: 75vh;
     }
 
     .sum-section, .stat-section, .bio-section, .cred-section {
@@ -580,11 +581,6 @@ body {
 
     .sum-text p {
         margin: 5%;
-        font-site: 0.9rem;
-    }
-
-    .site-main {
-        overflow: hidden;
     }
 }
 
@@ -599,7 +595,9 @@ body {
 
     }
 
-
+    .site-main {
+        overflow: hidden;
+    }
 
     .stat-container h3 {
         font-size: 1rem;
